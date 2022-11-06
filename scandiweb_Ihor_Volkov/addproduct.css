@@ -1,0 +1,120 @@
+html {
+    background-color: aliceblue;
+}
+.btns_add_and_delete_mass {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:170px;
+}
+.save_btn, .cancel_btn {
+    font-size: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 5px 10px 5px 10px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    height: 40px;
+    box-shadow: 2px 4px 4px rgb(91,91,91);
+    text-decoration: none;
+    color: black;
+    line-height: 20px;
+    text-transform: none;
+}
+.save_btn:hover {
+    cursor: pointer;
+}
+.save_btn,.cancel_btn {
+    padding-top: 10px;
+}
+.save_btn:hover, .cancel_btn:hover {
+    background-color: lightsalmon;
+}
+#product_form {
+    display: block;
+    width: 400px;
+}
+.sku,.name,.price,.switcher {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 315px;
+    text-align: left;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.name,.price {
+    margin-top: 20px;
+}
+.switcher {
+    margin-top: 60px;
+}
+.sku label,.name label,.price label,.switcher label {
+    margin-right: 20px;
+}
+.sku input,.name input,.price input,.switcher select {
+    height: 30px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+.dinamic_change_form {
+    margin-top: 60px;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+.dvd_form,.furniture_form,.book_form {
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px 15px 10px 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.dvd_form p,.furniture_form p,.book_form p{
+    margin-top: 10px;
+    font-size: 14px;
+}
+.dvd_form p span,.furniture_form p span,.book_form p span {
+    color: lightsalmon;
+    font-weight: 700;
+}
+.size_block,.height_block,.width_block,.length_block,.weight_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+.width_block,.length_block {
+    margin-top: 10px;
+}
+.size_block label,.height_block label,.width_block label,.length_block label,.weight_block label {
+    font-size: 18px;
+}
+.size_block input,.height_block input,.width_block input,.length_block input,.weight_block input{
+    border: 1px solid black;
+    font-size: 16px;
+    height: 30px;
+}
+.furniture_form,.book_form {
+    display: none;
+}
+input {
+    padding-left: 5px;
+}
+
+footer {
+    padding-top: 160px;
+}
+/* make changes with padding-top of Footer depends on type switched form:
+.dvd_form = 160px;
+.furniture_form = 230 px;
+.book_form = 160px;
+
+
+
+*/
